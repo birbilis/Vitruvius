@@ -39,6 +39,9 @@ Grab the package using NuGet
         viewer.DrawBody(body);
 
 ### Angles between joints
+
+![Angles](http://i2.wp.com/vitruviuskinect.com/wp-content/uploads/2015/05/vitruvius-mathematics.jpg "Vitruvius Angles")
+
         double angle = elbow.Angle(shoulder, wrist);
         double angle = elbow.Angle(shoulder, wrist, Axis.Z);
         double radians = angle.ToRadians();
@@ -54,7 +57,7 @@ Grab the package using NuGet
 
            switch (gesture)
            {
-        	   case (GestureType.JointHands): break;
+        	   case (GestureType.JoinedHands): break;
         	   case (GestureType.Menu): break;
         	   case (GestureType.SwipeDown): break;
         	   case (GestureType.SwipeLeft): break;
@@ -73,6 +76,9 @@ Grab the package using NuGet
         KinectJointSelector	// Allows you to select a joint visually.
 
 ### Avateering ([Academic & Premium Versions](http://vitruviuskinect.com))
+
+![Avateering](http://i2.wp.com/vitruviuskinect.com/wp-content/uploads/2015/10/vitruvius-kinect-body-models.jpg "Vitruvius Avateering")
+
         Avateering.Update(model, body);
         
 ### Recording & Playback ([Academic & Premium versions](http://vitruviuskinect.com))
@@ -85,6 +91,9 @@ Grab the package using NuGet
         player.SeekFrame(seekDelta);
 
 ### HD Face with properties ([Academic & Premium Versions](http://vitruviuskinect.com))
+
+![Face](http://vitruviuskinect.com/wp-content/uploads/2015/10/vitruvius-kinect-face-cover.svg "Vitruvius HD Face")
+
         Face face = faceFrame.Face();
         var nose = face.Nose;
         var mouth = face.Mouth;
